@@ -14,7 +14,7 @@ module NodeClassifier
 
       private
       def assign_id
-        self.id = SecureRandom.uuid
+        self.id = SecureRandom.uuid unless self.id
       end
     end
   end

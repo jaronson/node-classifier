@@ -1,9 +1,11 @@
 SPEC_ROOT = File.join(File.dirname(__FILE__), '..')
+ENV['RACK_ENV'] = 'test'
 
 require "#{SPEC_ROOT}/bin/boot"
 require 'database_cleaner'
 require 'rack/test'
 require 'pry'
+require 'json'
 require 'yaml'
 require 'securerandom'
 
