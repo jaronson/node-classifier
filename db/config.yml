@@ -1,0 +1,15 @@
+base: &base
+  adapter: postgresql
+  host:    localhost
+
+development:
+  <<: *base
+  database: nc_dev
+
+test:
+  <<: *base
+  database: nc_test
+
+production:
+  <<: *base
+  database: nc_prod
